@@ -1,7 +1,7 @@
 {
-  "name": "mongoose-paginate",
+  "name": "mongoose-paginate-custom",
   "description": "Pagination plugin for Mongoose",
-  "version": "5.0.2",
+  "version": "5.0.4",
   "author": {
     "name": "Edward Hotchkiss",
     "email": "edward@edwardhotchkiss.com"
@@ -18,11 +18,15 @@
     {
       "name": "Dmitry Kirilyuk",
       "email": "gk.joker@gmail.com"
+    },
+    {
+      "name": "Ahmed Medhat",
+      "email": "medhat1471993@gmail.com"
     }
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/edwardhotchkiss/mongoose-paginate.git"
+    "url": "https://github.com/medhat93/mongoose-paginate.git"
   },
   "license": "MIT",
   "keywords": [
@@ -30,7 +34,10 @@
     "paginate",
     "pagination",
     "paging",
-    "page"
+    "page",
+    "custom",
+    "max",
+    "limit"
   ],
   "engines": {
     "node": ">=4.2.4"
