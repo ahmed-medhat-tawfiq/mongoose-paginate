@@ -43,7 +43,7 @@ var Model = mongoose.model('Model',  schema); // Model.paginate()
   - `[leanWithId=true]` {Boolean} - If `lean` and `leanWithId` are `true`, adds `id` field with string representation of `_id` to every document
   - `[offset=0]` {Number} - Use `offset` or `page` to set skip position
   - `[page=1]` {Number}
-  - `[limit=10]` {Number}
+  - `[limit=100]` {Number}
 * `[callback(err, result)]` - If specified the callback is called once pagination results are retrieved or when an error has occurred
 
 **Return value**
