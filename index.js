@@ -11,7 +11,7 @@
  * @param {Boolean} [options.leanWithId=true]
  * @param {Number} [options.offset=0] - Use offset or page to set skip position
  * @param {Number} [options.page=1]
- * @param {Number} [options.limit=10]
+ * @param {Number} [options.limit=100]
  * @param {Function} [callback]
  * @returns {Promise}
  */
@@ -24,7 +24,7 @@ function paginate(query, options, callback) {
   let populate = options.populate;
   let lean = options.lean || false;
   let leanWithId = options.leanWithId ? options.leanWithId : true;
-  let limit = options.limit ? options.limit : 10;
+  let limit = options.limit ? (options.limit > 100? 100 : options.limit) : 100;
   let page, offset, skip, promises;
   if (options.offset) {
     offset = options.offset;
